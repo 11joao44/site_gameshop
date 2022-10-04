@@ -1,0 +1,166 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.slider {
+    height: 400px;
+    width: 800px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 609.043%;
+    height: 100%;
+}
+
+input {
+    display: none;
+}
+
+
+.slide {
+    width: 16.666%;
+    transition: 0.5s;
+}
+
+.slide img {
+    height: 100%;
+    width: 100%;
+}
+
+.navigation-bar {
+    position: relative;
+    bottom: 40px;
+    display: flex;
+    left: 70%;
+    transform: translate(-50%);
+}
+
+.manual-btn {
+    width: 70px;
+    height: 15px;
+    border: 3px solid white;
+    cursor: pointer;
+    border-radius: 15%;
+    border-color: #9797ff;
+    transition: 1.5s;
+}
+
+.manual-btn:hover {
+    background: linear-gradient(90deg, rgb(42, 63, 245) 5%, #004AAD 50% , #1717f2 99%);
+    margin: 2px;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 15px;
+}
+
+#slide1:checked ~ .first {
+    margin-left: 0%;
+    transition: 1.3s;
+}
+
+#slide2:checked ~ .first {
+    margin-left: -16.666%;
+    transition: 1.3s;
+}
+
+#slide3:checked ~ .first {
+    margin-left: -33.332%;
+    transition: 1.3s;
+}
+
+#slide4:checked ~ .first {
+    margin-left: -49.998%;
+    transition: 1.3s;
+}
+
+#slide5:checked ~ .first {
+    margin-left: -66.664%;
+    transition: 1.3s;
+}
+
+#slide6:checked ~ .first {
+    margin-left: -83.330%;
+    transition: 1.3s;
+}
+
+.catalogo {
+    margin-left: 7%;
+    margin-top: 1%;
+}
+
+.logo {
+    margin-right: 15px;
+    width: 35px;
+    margin-top: 2%;
+}
+
+.brands-list li {
+    display: inline;
+}
+
+
+.catalogo h2, p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.catalogo img {
+    border-radius: 3%;
+}
+
+.catalogo img:hover {
+    transform: scale(1.04);
+    transition: transform 0.9s;
+    border-radius: 5%;
+}
+
+.galeria ul {
+    display: flex;
+    justify-content: center;
+    margin: 100px ;
+    list-style-type: none;
+}
+
+.itensjogos img {
+    width:250px;
+    height:320px;
+    margin: 25px;
+    border-radius: 3%;
+}
+
+.itensjogos img:hover {
+    transform: scale(1.1);
+    transition: transform 0.66s;
+    margin: 25px;
+    border-radius: 3%;
+    border: 3px solid #03469e;
+}
+
+.itensjogos p {
+    margin-left: 10%;
+    font-family: 'Bungee', cursive;
+    margin-top: -23.5%;
+    font-size: 28px;
+}
+
+.galeria ul h1 {
+    font-size: 15px;
+    margin-left: 10%;
+    margin-top: -6%;
+}
+
+.galeria ul h3 {
+    font-size: 20px;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+.galeria ul h6 {
+    margin-top: 5%;
+    margin-left: 10%;
+}
